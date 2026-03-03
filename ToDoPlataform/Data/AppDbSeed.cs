@@ -14,13 +14,13 @@ public class AppDbSeed
         {
             new IdentityRole()
             {
-                Id = "fee66274-eb99-4be9-b891-4fe65a91783a",
+                Id = "6b262d8b-f586-4b25-8d2b-ad12d8a4469f",
                 Name = "Administrador",
                 NormalizedName = "ADMINISTRADOR"
             },
             new IdentityRole()
             {
-                Id = "0781b0f7-3fe3-4ce0-a089-24879aab241c",
+                Id = "6773396a-968e-45ba-8141-3295ecd2acec",
                 Name = "Usuário",
                 NormalizedName = "USUÁRIO"
             },
@@ -33,26 +33,26 @@ public class AppDbSeed
         {
             new AppUser()
             {
-                Id = "7c42a74e-53e4-4cd6-acd3-72d4c9b0e795",
-                Email = "junihulk7@gmail.com",
-                NormalizedEmail = "JUNIHULK7@GMAIL.COM",
-                UserName = "junihulk7@gmail.com",
-                NormalizedUserName = "JUNIHULK7@GMAIL.COM",
+                Id = "b269a1e8-e779-4bc8-9e00-d88cf81ce3d3",
+                Email = "nicolasferreia2008@gmail.com",
+                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
+                UserName = "nicolasferreia2008@gmail.com",
+                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
                 LockoutEnabled = false,
                 EmailConfirmed = true,
-                Name = "Diego Fernando dos Santos Junior",
+                Name = "Nicolas de Castro Ferreira",
                 // ProfilePicture = "/img/users/7c42a74e-53e4-4cd6-acd3-72d4c9b0e795.png",
             },
             new AppUser()
             {
-                Id = "f83236be-5cf6-4e48-9083-d46ffe50c32c",
-                Email = "dfsntsjunior@gmail.com",
-                NormalizedEmail = "DFSNTSJUNIOR@GMAIL.COM",
-                UserName = "dfsntsjunior@gmail.com",
-                NormalizedUserName = "DFSNTSJUNIOR@GMAIL.COM",
+                IdentifierCase = "c64ac01b-d2b0-44e6-a34d-9ef185badece",
+                Email = "nicolasferreia2008@gmail.com",
+                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
+                UserName = "nicolasferreia2008@gmail.com",
+                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
                 LockoutEnabled = false,
                 EmailConfirmed = true,
-                Name = "Diego Fernando dos Santos Junior",
+                Name = "Nioclas de Castro Ferreira"
                 // ProfilePicture = "/img/users/f83236be-5cf6-4e48-9083-d46ffe50c32c",
             },
         };
@@ -101,7 +101,7 @@ public class AppDbSeed
             new ToDo()
             {
                 Id = 3,
-                Title = "Terminar camada de dados do Vereda",
+                Title = "Estudar repertorio de musicas da igreja",
                 Description = "Finalizar até o final de semana",
                 UserId = users[1].Id
             },
