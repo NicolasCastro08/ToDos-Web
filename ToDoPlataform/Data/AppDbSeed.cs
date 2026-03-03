@@ -46,13 +46,13 @@ public class AppDbSeed
             new AppUser()
             {
                 Id = "c64ac01b-d2b0-44e6-a34d-9ef185badece",
-                Email = "nicolasferreia2008@gmail.com",
-                NormalizedEmail = "NICOLASFERREIA2008@GMAIL.COM",
-                UserName = "nicolasferreia2008@gmail.com",
-                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
+                Email = "tionick1508@gmail.com",
+                NormalizedEmail = "TIONICK1508@GMAIL.COM",
+                UserName = "tionick1508@gmail.com",
+                NormalizedUserName = "TIONICK1508@GMAIL.COM",
                 LockoutEnabled = false,
                 EmailConfirmed = true,
-                Name = "Nioclas de Castro Ferreira"
+                Name = "Castro Nicolas"
                 // ProfilePicture = "/img/users/f83236be-5cf6-4e48-9083-d46ffe50c32c",
             },
         };
