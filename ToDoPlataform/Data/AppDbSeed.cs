@@ -35,7 +35,7 @@ public class AppDbSeed
             {
                 Id = "b269a1e8-e779-4bc8-9e00-d88cf81ce3d3",
                 Email = "nicolasferreia2008@gmail.com",
-                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
+                NormalizedEmail = "NICOLASFERREIA2008@GMAIL.COM",
                 UserName = "nicolasferreia2008@gmail.com",
                 NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
                 LockoutEnabled = false,
@@ -45,9 +45,9 @@ public class AppDbSeed
             },
             new AppUser()
             {
-                IdentifierCase = "c64ac01b-d2b0-44e6-a34d-9ef185badece",
+                Id = "c64ac01b-d2b0-44e6-a34d-9ef185badece",
                 Email = "nicolasferreia2008@gmail.com",
-                NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
+                NormalizedEmail = "NICOLASFERREIA2008@GMAIL.COM",
                 UserName = "nicolasferreia2008@gmail.com",
                 NormalizedUserName = "NICOLASFERREIA2008@GMAIL.COM",
                 LockoutEnabled = false,
