@@ -5,6 +5,7 @@ namespace ToDoPlataform.Services;
 
     public interface IUserServices
     {
+        
         Task<SignInResult> Login(LoginVM login);
 
         Task Logout();
