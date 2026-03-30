@@ -1,4 +1,4 @@
-namespace ToDoPlataform.ViewModels;
+namespace ToDoPlatform.ViewModels;
 
 public class UserVM
 {

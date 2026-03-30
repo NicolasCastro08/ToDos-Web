@@ -1,6 +1,6 @@
 using System.Net.Mail;
 
-namespace ToDoPlataform.Helpers;
+namespace ToDoPlatform.Helpers;
 
 public class Helper
 {

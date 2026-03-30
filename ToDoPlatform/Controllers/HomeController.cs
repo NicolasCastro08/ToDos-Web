@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ToDoPlataform.Models;
+using ToDoPlatform.Models;
 
-namespace ToDoPlataform.Controllers;
+namespace ToDoPlatform.Controllers;
 
 public class HomeController : Controller
 {

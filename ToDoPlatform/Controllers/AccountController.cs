@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoPlataform.Services;
+using ToDoPlatform.Services;
 using ToDoPlatform.ViewModels;
 
 namespace ToDoPlatform.Controllers;
@@ -7,10 +7,10 @@ namespace ToDoPlatform.Controllers;
 public class AccountController : Controller
 {
     private readonly ILogger<AccountController> _logger;
-    private readonly IUserServices _userService;
+    private readonly IUserService _userService;
 
     public AccountController(ILogger<AccountController> logger,
-     IUserServices userService)
+     IUserService userService)
     {
         _logger = logger;
         _userService = userService;
