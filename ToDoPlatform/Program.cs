@@ -6,43 +6,41 @@ using ToDoPlatform.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Serviço de conexão com o banco de dados
-string conexao = builder .Configuration.GetConnectionString("Conexao");
+// Conexão com o banco
+string conexao = builder.Configuration.GetConnectionString("Conexao");
+
 builder.Services.AddDbContext<AppDbContext>(
     options => options.UseMySQL(conexao)
 );
 
-// Serviço de configuração do Identity - Gestão de Usuários
-builder.Services.AddIdentity<AppUser, IdentityRole>(
-    opt =>
-    {
-        opt.User.RequireUniqueEmail = true;
-        opt.SignIn.RequireConfirmedAccount = false;
-    }
-
-)
+// Configuração do Identity
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.User.RequireUniqueEmail = true;
+    opt.SignIn.RequireConfirmedAccount = false;
+})
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
 
-builder.Services.AddControllersWithViews();
-
+// Serviço de usuário
 builder.Services.AddTransient<IUserService, UserService>();
+
+// Controllers + Views
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 // Garante a existência do banco
 using (var scope = app.Services.CreateScope())
 {
-    var DbContext = scope.ServiceProvider
+    var dbContext = scope.ServiceProvider
         .GetRequiredService<AppDbContext>();
 }
 
-// Configure the HTTP request pipeline.
+// Pipeline HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -58,6 +56,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
