@@ -28,12 +28,12 @@
                     <input class="form-input" asp-for="Password">
                      <span class="error-message" asp-validationfor="Password"></span>
                 </div>
+
                 <div class="remember-forgot">
-                    <label class="remember">
-                        <input type="checkbox" asp-for="RememberMe">
-                        <label class="form-label" aspfor="RememberMe"></label>
-                </label>
-                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    <input type="checkbox" asp-for="RememberMe">
+                    <label class="remember" asp-for="RememberMe"></label>
+
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
                 </div>
                 <button type="submit" class="btn-login"
 disabled="@(TempData["Success"] != null)">Entrar</button>
