@@ -27,6 +27,6 @@ public class ToDo
     public bool Done { get; set; } = false; //tarefa concluida ou não
 
     [Display(Name = "Data de Cadastro")]
-    public DateTime CreateAt { get; set; } = DateTime.Now;
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
 
 }
