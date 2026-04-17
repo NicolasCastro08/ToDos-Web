@@ -109,12 +109,7 @@ body {
 }
 
 .error-message {
-    background: #ffebee;
     color: #c62828;
-    padding: 0.8rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    display: none;
 }
 
 .remember-forgot {
@@ -129,7 +124,6 @@ body {
     align-items: center;
     gap: 0.5rem;
     color: #666;
-    margin-right: 37%;
 }
 
 .forgot-password {
