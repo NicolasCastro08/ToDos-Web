@@ -41,7 +41,7 @@ public class AppDbSeed
                 LockoutEnabled = false,
                 EmailConfirmed = true,
                 Name = "Nicolas de Castro Ferreira",
-                // ProfilePicture = "/img/users/7c42a74e-53e4-4cd6-acd3-72d4c9b0e795.png",
+                ProfilePicture = "/img/users/7c42a74e-53e4-4cd6-acd3-72d4c9b0e795.png",
             },
             new AppUser()
             {
